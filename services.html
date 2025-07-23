@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dịch Vụ - SellComputer X</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --main-yellow: #FAB301; --main-black: #000000; }
+    body { background: #fffde9; font-family: 'Roboto', Arial, sans-serif;}
+    .navbar, .footer-custom { background: linear-gradient(90deg, var(--main-yellow) 80%, var(--main-black) 100%);}
+    .navbar-brand { font-weight: 700; letter-spacing: 2px; font-size: 1.5rem;}
+    .anixia-logo { height: 44px; margin-right: 12px; }
+    .navbar-nav .nav-link { color: #fff !important; }
+    .navbar-nav .nav-link.active {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link:hover { color: #FAB301 !important; }
+    .banner-section { position: relative; height: 200px; display: flex; align-items: center; justify-content: center; background: #000; overflow: hidden;}
+    .banner-img { object-fit: cover; width: 100%; height: 100%; opacity: 0.5; position: absolute; inset: 0;}
+    .banner-content { z-index: 2; position: relative; color: #fff; text-align: center; animation: banner-fade-in 1.2s cubic-bezier(.42,.23,.67,.98) forwards; opacity: 0; animation-delay: 0.2s;}
+    @keyframes banner-fade-in { 0% { transform: translateY(-80px); opacity: 0;} 100% { transform: translateY(0); opacity: 1;} }
+    .service-card { transition: transform .2s, box-shadow .2s; border: none;}
+    .service-card:hover { transform: scale(1.03); box-shadow: 0 6px 22px #fab30144;}
+    .footer-custom { color: #000; border-top: 4px solid #FAB301;}
+    .footer-link:hover { color: var(--main-yellow);}
+  </style>
+</head>
+<body>
+  <!-- Header + Navigation (không có logo FPT) -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark py-2">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="/Lab3haha/ảnh3/logo234.png" alt="Logo SellComputer X" class="anixia-logo me-2">
+        </a>
+        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-md-4" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Giới Thiệu</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Dịch Vụ</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Sản Phẩm</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Banner dịch vụ -->
+    <section class="banner-section mb-4" aria-label="Banner dịch vụ">
+      <img src="/Lab3haha/ảnh3/tinh9.webp" class="banner-img" alt="Banner Dịch vụ điện thoại máy tính">
+      <div class="banner-content">
+        <h1 class="display-6 fw-bold">Dịch Vụ Bán Lẻ & Kỹ Thuật</h1>
+        <p class="fs-5 mb-0">Đồng hành cùng bạn trong từng trải nghiệm công nghệ</p>
+      </div>
+    </section>
+    <!-- Thông tin dịch vụ -->
+    <section class="container mb-5">
+      <article class="mb-4">
+        <section class="bg-white rounded-4 shadow-sm p-4 mb-2">
+          <h2 class="fs-3 fw-bold mb-2">Về SellComputer X</h2>
+          <p>SellComputer X cung cấp các dịch vụ bán lẻ điện thoại, máy tính xách tay, máy tính bảng và phụ kiện chính hãng, cùng các dịch vụ kỹ thuật chuyên sâu cho khách hàng cá nhân và doanh nghiệp.</p>
+        </section>
+      </article>
+      <section class="mb-4">
+        <h3 class="fs-4 mb-3 fw-semibold">Bảng Giá Một Số Sản Phẩm</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped align-middle rounded-3">
+            <thead style="background:#FAB301;color:#000;">
+              <tr>
+                <th>Loại Sản Phẩm</th>
+                <th>Mẫu</th>
+                <th>Giá Bán</th>
+                <th>Khuyến Mãi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Điện thoại</td><td>iPhone 15 Pro Max</td><td>29.990.000 VND</td><td>Trả góp 0%</td></tr>
+              <tr><td>Laptop</td><td>Macbook Pro M4</td><td>45.990.000 VND</td><td>Tặng balo cao cấp</td></tr>
+              <tr><td>Android phone</td><td>Xiaomi 14 Ultra</td><td>24.990.000 VND</td><td>Giảm 5% khi mua kèm phụ kiện</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="mb-5">
+        <div style="background: linear-gradient(90deg, #FAB301 60%, #000 100%); color: #fff; border-radius: 16px;" class="p-3 shadow-sm mb-3">
+          <h4>Ưu đãi tháng này</h4>
+          <p class="mb-0">Miễn phí vệ sinh laptop, điện thoại cho khách hàng mua hàng trong tháng!</p>
+        </div>
+        <h5 class="mb-2">Dịch vụ & hỗ trợ kỹ thuật</h5>
+        <ul>
+          <li>Tư vấn chọn thiết bị phù hợp nhu cầu</li>
+          <li>Sửa chữa, thay linh kiện, nâng cấp máy tính, điện thoại</li>
+          <li>Cài đặt phần mềm, diệt virus, bảo vệ dữ liệu</li>
+          <li>Vệ sinh, bảo trì máy định kỳ</li>
+          <li>Hỗ trợ từ xa & tận nơi đối với khách doanh nghiệp</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="fs-3 fw-bold text-center mb-4">Các Dịch Vụ Chủ Đạo Của Chúng Tôi</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <article class="col">
+            <div class="card service-card h-100 shadow">
+              <img src="/Lab3haha/ảnh3/lenovo1.webp" class="card-img-top" alt="Bán lẻ điện thoại & máy tính">
+              <div class="card-body">
+                <h5 class="card-title">Bán lẻ điện thoại & máy tính</h5>
+                <p class="card-text">Cam kết hàng chính hãng, bảo hành toàn quốc, giá tốt cùng nhiều ưu đãi hấp dẫn.</p>
+                <a href="#" class="btn btn-warning">Xem chi tiết</a>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card service-card h-100 shadow">
+              <img src="/Lab3haha/ảnh3/lenovo2.webp" class="card-img-top" alt="Sửa chữa & Bảo trì">
+              <div class="card-body">
+                <h5 class="card-title">Sửa chữa & Bảo trì</h5>
+                <p class="card-text">Nhận sửa chữa, thay thế linh kiện, vệ sinh, bảo trì các dòng điện thoại, laptop.</p>
+                <a href="#" class="btn btn-warning">Xem chi tiết</a>
+              </div>
+            </div>
+          </article>
+          <article class="col">
+            <div class="card service-card h-100 shadow">
+              <img src="/Lab3haha/ảnh3/lenovo1.webp" class="card-img-top" alt="Cài đặt & Hỗ trợ phần mềm">
+              <div class="card-body">
+                <h5 class="card-title">Cài đặt & Hỗ trợ phần mềm</h5>
+                <p class="card-text">Cài đặt Windows/MacOS, Office, phần mềm diệt virus bản quyền, khôi phục dữ liệu.</p>
+                <a href="#" class="btn btn-warning">Xem chi tiết</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer-custom text-center py-4">
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-12">
+          <img src="/Lab3haha/ảnh3/logo234.png" alt="SellComputer X Logo" style="height:34px;vertical-align:middle;">
+        </div>
+      </div>
+      <p class="mb-1">&copy; 2025 SellComputer X. All rights reserved.</p>
+      <p class="mb-2">Email: <a href="mailto:lienhe@sellcomputerx.vn" class="footer-link">lienhe@sellcomputerx.vn</a></p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://facebook.com" class="footer-link">Facebook</a>
+        <a href="https://instagram.com" class="footer-link">Instagram</a>
+        <a href="https://youtube.com" class="footer-link">Youtube</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
